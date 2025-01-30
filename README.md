@@ -23,9 +23,9 @@ Managing different versions of Python libraries across projects can be a nightma
 
 First, ensure you have Python installed. Run:
 
-'''bash
+```bash
 python --version
-'''
+```
 
 
 ### 2. *Install Virtual Environment Module*
