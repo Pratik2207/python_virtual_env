@@ -1,4 +1,4 @@
-# python_virtual_env
+
 
 # Mastering Python Virtual Environments: Manage Multiple Versions of Libraries Effortlessly
 
@@ -134,7 +134,7 @@ Besides venv, you can use pipenv, which combines pip and virtualenv for better p
   rm -rf my_env  # Linux/macOS
   del my_env  # Windows
   ```
-````
+
 
 
 
