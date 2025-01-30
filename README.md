@@ -32,16 +32,18 @@ python --version
 
 Python provides the venv module by default in versions *3.3+*. If it's not available, install it using:
 
-sh
+```bash
 pip install virtualenv
+```
 
 
 ### 3. *Create a Virtual Environment*
 
 Navigate to your project directory and run:
 
-sh
+```bash
 python -m venv my_env
+```
 
 
 This will create a directory named my_env containing the isolated environment.
@@ -50,14 +52,15 @@ This will create a directory named my_env containing the isolated environment.
 
 #### On Windows:
 
-sh
+```bash
 my_env\Scripts\activate
-
+```
 
 #### On macOS/Linux:
 
-sh
+```bash
 source my_env/bin/activate
+```
 
 
 Once activated, you’ll see (my_env) before your command prompt, indicating that the environment is active.
@@ -68,33 +71,33 @@ Once activated, you’ll see (my_env) before your command prompt, indicating tha
 
 To install a specific version of a package, use:
 
-sh
+```bash
 pip install numpy==1.21.0
-
+```
 
 To check installed packages and their versions:
 
-sh
+```bash
 pip list
-
+```
 
 To upgrade a package:
 
-sh
+```bash
 pip install --upgrade numpy
-
+```
 
 To save installed dependencies for future use:
 
-sh
+```bash
 pip freeze > requirements.txt
-
+```
 
 To install dependencies from a saved file:
 
-sh
+```bash
 pip install -r requirements.txt
-
+```
 
 ---
 
@@ -103,38 +106,39 @@ pip install -r requirements.txt
 Besides venv, you can use pipenv, which combines pip and virtualenv for better package management.
 
 1. Install pipenv:
-   sh
+   ```bash
    pip install pipenv
+   ```
    
 2. Create a new environment with Python 3:
-   sh
+   ```bash
    pipenv install --python 3
+   ```
    
 3. Activate the environment:
-   sh
+   ```bash
    pipenv shell
-   
+   ```
 
 ---
 
 ## Deactivating and Removing Virtual Environments
 
 - To deactivate a virtual environment, simply run:
-  sh
-  
-
-deactivate
-
+  ```bash
+  deactivate
+  ```
 `
 - To remove a virtual environment, delete its folder:
-sh
-rm -rf my_env  # Linux/macOS
-del my_env  # Windows
+  ```bash
+  rm -rf my_env  # Linux/macOS
+  del my_env  # Windows
+  ```
 ````
 
----
 
-## Conclusion
+
+### Conclusion
 
 Using Python virtual environments is an essential practice for developers working on multiple projects with different dependencies. Whether you choose venv or pipenv, adopting this habit will help you maintain a clean and organized development workflow. Try setting up a virtual environment today and experience the benefits firsthand!
 
